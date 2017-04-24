@@ -16,8 +16,8 @@ bin_mode = False
 bits = "64"
 path = "nasm"
 
-parser = argparse.ArgumentParser(description = "Simple program that converts nasm syntax to binary. Nasm is required", epilog ="Made by guaranka (swientymateusz at gmail d0t com)")
-parser.add_argument("-r", "--raw", type = str, help = "raw mode. Must be followed with asm instruction", required = False)
+parser = argparse.ArgumentParser(description = "Simple program that converts nasm syntax to machine code. Nasm is required", epilog ="Made by srakai (swientymateusz at gmail d0t com)")
+parser.add_argument("-r", "--raw", type = str, help = "raw mode. Must be followed with asm instruction, (execute, print and exit)", required = False)
 parser.add_argument("-b", "--binary", help = "print in binary (default print in hex)", action="store_true", required = False)
 parser.add_argument("--bits", type = str, help = "x86 bits (32 or 64)", required = False)
 parser.add_argument('--npath', type = str, help = "path to nasm", required = False)
